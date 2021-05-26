@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.example.ecoleenligne.Lancement.FirstPageIntro" android:background="@drawable/gradient">
+    <ImageView
+            android:layout_width="251dp"
+            android:layout_height="219dp" app:srcCompat="@drawable/logo" android:id="@+id/imageView2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notre réussite est la votre !"
+            android:textSize="30sp" android:textColor="#FFFFFF" android:textStyle="bold"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openSecondPage"
+            android:text="Découvrir" android:layout_marginTop="70dp"/>
+</LinearLayout>

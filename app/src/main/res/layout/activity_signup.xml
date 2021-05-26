@@ -1,0 +1,110 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:id="@+id/ll"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+    >
+
+        <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="S'inscrire en tant que : "
+                android:gravity="center" android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:fontFamily="sans-serif-black" android:textSize="18sp">
+        </com.google.android.material.textview.MaterialTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="329dp">
+        <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/ParentCard"
+                android:layout_width="374dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:gravity="center|left" android:background="#673AB7">
+                <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/parenticon"
+                        android:padding="10dp" app:srcCompat="@drawable/parenticon"/>
+
+                <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray"
+                        android:layout_margin="10dp"/>-->
+
+            </LinearLayout>
+            <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="Parent"
+                    android:padding="5dp"
+                    android:textColor="@android:color/primary_text_dark_nodisable" android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"/>
+        </com.google.android.material.card.MaterialCardView>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_margin="10dp"/>
+        <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="374dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:id="@+id/StudentCard">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center" android:background="#9C27B0">
+
+                <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="374dp"
+                        android:layout_height="56dp"
+                        android:gravity="center"
+                        android:text="Etudiant"
+                        android:padding="5dp"
+                        android:textColor="@android:color/primary_text_dark" android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/studenticon"
+                    android:padding="10dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
